@@ -284,7 +284,7 @@
       </section>
     </main>
 
-    <!-- Футер -->
+    <!--Футер-->
     <footer class="section-footer">
       <div class="container footer">
         <div class="address">
@@ -366,9 +366,28 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <p class="subscribe-text">Підпишіться на розсилку</p>
+          <form name="footer-form">
+            <div class="form-footer">
+              <input class="form-email" name="user-mail" type="email" placeholder="E-mail" />
+              <button
+                class="form-btn"
+                type="submit"
+                animate__animated
+                animate__pulse
+                animate__slower
+              >
+                Підписатися
+                <svg class="form-btn-icon" width="24" height="24">
+                  <use class="btn-icon" href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
-
     <!-- Підключення скриптів -->
     <script src="./js/header-scroll.js"></script>
   </body>
