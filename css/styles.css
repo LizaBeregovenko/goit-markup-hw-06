@@ -259,7 +259,7 @@ p {
 
   letter-spacing: 0.06em;
   border-radius: 4px;
-  min-width: 200px;
+  min-width: 216px;
   padding: 8px 30px;
   border: 2px solid transparent;
 
@@ -814,10 +814,6 @@ p {
   background: rgba(0, 0, 0, 0.2);
   z-index: 1000;
 
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-
   transition-property: opacity, visibility;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -909,7 +905,6 @@ p {
   color: var(--color-accent);
 }
 
-/* .modal-form-group:focus-within  */
 .modal-form-label {
   font-style: normal;
   font-weight: 400;
