@@ -263,7 +263,7 @@ p {
   padding: 8px 30px;
   border: 2px solid transparent;
 
-  transition-property: background;
+  transition-property: background, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -278,6 +278,7 @@ p {
 .hero-button:hover,
 .hero-button:focus {
   background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*секція особливості*/
@@ -459,6 +460,7 @@ p {
 }
 
 /* клієнти */
+
 /* .client {
 } */
 .client-title {
@@ -505,7 +507,7 @@ p {
 .client-icon {
   fill: currentColor;
 }
-/* футер */
+/* підвал*/
 .section-footer {
   background-color: var(--background-color-basic);
   padding: 60px 0;
@@ -529,9 +531,68 @@ p {
 
   display: inline-block;
 }
-/* subscribe */
-/* .subscribe {
+
+/* .address {
 } */
+.section-address {
+  font-style: normal;
+  display: block;
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.section-list {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.section-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.section-link-address {
+  color: var(--color-white);
+}
+.section-link-mail,
+.section-link-tel {
+  color: rgba(255, 255, 255, 0.6);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}
+
+.section-link-mail:hover,
+.section-link-mail:focus,
+.section-link-tel:focus,
+.section-link-tel:hover {
+  color: var(--color-white);
+}
+/* social */
+.social {
+  margin-right: 94px;
+}
+.social-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 20px;
+
+  display: block;
+}
+.footer-link {
+  color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* subscribe */
+.subscribe {
+  margin-left: auto;
+}
 .subscribe-text {
   font-style: normal;
   font-weight: 700;
@@ -589,69 +650,15 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
 }
-.form-btn-icon {
-}
+/* .form-btn-icon {
+} */
 
 .form-btn:hover,
 .form-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background: #188ce8;
 }
-/* .address {
-} */
-.section-address {
-  font-style: normal;
-  display: block;
-  margin-left: auto;
-  margin-right: 70px;
-}
 
-.section-list {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-.section-item:not(:last-child) {
-  margin-bottom: 9px;
-}
-.section-link-address {
-  color: var(--color-white);
-}
-.section-link-mail,
-.section-link-tel {
-  color: rgba(255, 255, 255, 0.6);
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s;
-}
-
-.section-link-mail:hover,
-.section-link-mail:focus,
-.section-link-tel:focus,
-.section-link-tel:hover {
-  color: var(--color-white);
-}
-.social {
-  margin-right: 94px;
-}
-.social-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--color-white);
-  margin-bottom: 20px;
-
-  display: block;
-}
-.footer-link {
-  color: var(--color-white);
-  background-color: rgba(255, 255, 255, 0.1);
-}
 /* стилі для portfolio.html */
 
 /* секція фільтри */
@@ -858,3 +865,91 @@ p {
 /* .modal-btn-icon {
   fill: var(--color-title2);
 } */
+/* форми в модальному вікні та заголовок*/
+
+.modal-form {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.modal-form-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-title);
+
+  margin-bottom: 12px;
+}
+
+.modal-forms {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.modal-form-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  cursor: pointer;
+  color: var(--color-white);
+  background: var(--color-accent);
+
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 8px 30px;
+  border: 2px solid transparent;
+
+  transition-property: background, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-form-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal-form-input {
+}
+
+.modal-checkbox {
+  margin-bottom: 30px;
+}
+.modal-form-checkbox {
+}
+
+.modal-checkbox-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
+.modal-form-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+  color: var(--color-accent);
+}
