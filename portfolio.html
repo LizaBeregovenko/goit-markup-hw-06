@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио</title>
+    <title>Головна</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +16,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
   <body class="body">
@@ -368,22 +372,14 @@
         </div>
         <div class="subscribe">
           <p class="subscribe-text">Підпишіться на розсилку</p>
-          <form name="footer-form">
-            <div class="form-footer">
-              <input class="form-email" name="user-mail" type="email" placeholder="E-mail" />
-              <button
-                class="form-btn"
-                type="submit"
-                animate__animated
-                animate__pulse
-                animate__slower
-              >
-                Підписатися
-                <svg class="form-btn-icon" width="24" height="24">
-                  <use class="btn-icon" href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </div>
+          <form class="form-footer" name="footer-form">
+            <input class="form-email" name="user-mail" type="email" placeholder="E-mail" />
+            <button class="form-btn animate__animated animate__pulse animate__slower" type="submit">
+              Підписатися
+              <svg class="form-btn-icon" width="24" height="24">
+                <use class="btn-icon" href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
